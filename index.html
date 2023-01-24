@@ -7,109 +7,172 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="sidebar">
-    <p>Dashboard</p>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./index.html">Profile</a></li>
-      <li><a href="./index.html">Messages</a></li>
-      <li><a href="./index.html">History</a></li>
-      <li><a href="./index.html">Tasks</a></li>
-      <li><a href="./index.html">Communities</a></li>
-    </ul>
-    <ul>
-      <li><a href="./index.html">Settings</a></li>
-      <li><a href="./index.html">Support</a></li>
-      <li><a href="./index.html">Privacy</a></li>
-    </ul>
-  </div>
-
-  <div class="header">
-    <form action="./index.html">
-      <label for="search"></label><input type="search" name="search-bar" id="search" />
-    </form>
-
-    <div class="logo">Yasen Dimitrov</div>
-
-    <div class="greeting">
-      <span>Hi there,</span>
-      <h2>Yasen Dimitrov (@yasen)</h2>
+  <div class="grid-main">
+    <div class="grid-left">
+      <div class="sidebar">
+        <div class="sidebar-title">Dashboard</div>
+        <ul class="dashboard-top-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Profile</a></li>
+          <li><a href="./index.html">Messages</a></li>
+          <li><a href="./index.html">History</a></li>
+          <li><a href="./index.html">Tasks</a></li>
+          <li><a href="./index.html">Communities</a></li>
+        </ul>
+        <ul class="dashboard-bottom-list">
+          <li><a href="./index.html">Settings</a></li>
+          <li><a href="./index.html">Support</a></li>
+          <li><a href="./index.html">Privacy</a></li>
+        </ul>
+      </div>
     </div>
-    <button type="button">New</button>
-    <button type="button">Upload</button>
-    <button type="button">Share</button>
-  </div>
 
-  <div class="main">
-    <div class="projects">
-      <h2>Your projects</h2>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 1</h4>
-          <div class="card-para">Lorem ipsum</div>
+    <div class="grid-right">
+      <div class="header">
+        <div class="header-top">
+          <form action="./index.html">
+            <label for="search"></label><span class="search"></span><input type="search" name="search-bar"
+              id="search" />
+          </form>
+
+          <div class="logo">Yasen Dimitrov</div>
         </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 2</h4>
-          <div class="card-para">Lorem ipsum</div>
-        </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 3</h4>
-          <div class="card-para">Lorem ipsum</div>
-        </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 4</h4>
-          <div class="card-para">Lorem ipsum</div>
-        </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 5</h4>
-          <div class="card-para">Lorem ipsum</div>
-        </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="cards">
-        <div class="card-content">
-          <h4>Card 6</h4>
-          <div class="card-para">Lorem ipsum</div>
-        </div>
-        <div class="card-buttons"></div>
-      </div>
-      <div class="announcements">
-        <h2>Announcements</h2>
-        <div class="announcement">
-          <h5>Site Maintenance</h5>
-          <div class="announcement-text"></div>
-        </div>
-        <div class="announcement">
-          <h5>Community Share Day</h5>
-          <div class="announcement-text"></div>
-        </div>
-        <div class="announcement">
-          <h5>Updated Privacy Policy</h5>
-          <div class="announcement-text"></div>
+
+        <div class="header-bottom">
+          <div class="greeting">
+            <span>Hi there,</span>
+            <h2>Yasen Dimitrov (@yasen)</h2>
+          </div>
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
         </div>
       </div>
 
-      <div class="trending">
-        <h2>Trending</h2>
-        <div class="trending-content">@content1</div>
-        <div class="trending-content">@content2</div>
-        <div class="trending-content">@content3</div>
-        <div class="trending-content">@content4</div>
+      <div class="main">
+        <div class="projects">
+          <h2>Your projects</h2>
+          <div class="project-cards">
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 1</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 2</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 3</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 4</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 5</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+            <div class="cards">
+              <div class="card-content">
+                <h3>Card 6</h3>
+                <div class="card-para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae
+                  elementum curabitur. Platea dictumst vestibulum rhoncus est
+                  pellentesque elit.
+                </div>
+              </div>
+              <div class="card-buttons"></div>
+            </div>
+          </div>
+        </div>
+        <div class="announcements">
+          <h2>Announcements</h2>
+          <div class="announcements-content">
+            <div class="announcement">
+              <h5>Site Maintenance</h5>
+              <div class="announcement-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="announcement">
+              <h5>Community Share Day</h5>
+              <div class="announcement-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="announcement">
+              <h5>Updated Privacy Policy</h5>
+              <div class="announcement-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending">
+          <h2>Trending</h2>
+          <div class="trending-all">
+            <div class="trending-content">@content1</div>
+            <div class="trending-content">@content2</div>
+            <div class="trending-content">@content3</div>
+            <div class="trending-content">@content4</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
