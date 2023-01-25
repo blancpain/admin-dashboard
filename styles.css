@@ -216,6 +216,10 @@ input[type="search"] {
   border: none;
 }
 
+input[type="search"]:hover {
+  filter: brightness(90%);
+}
+
 .search::before {
   font-family: "Material Icons";
   content: "\e8b6";
