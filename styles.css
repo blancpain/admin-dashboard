@@ -18,6 +18,7 @@
 .grid-main {
   display: grid;
   grid-template-columns: 1fr 9fr;
+  height: 100vh;
 }
 
 .grid-left {
@@ -27,10 +28,13 @@
   padding-left: 2rem;
   color: var(--card-color);
   font-weight: 750;
+  position: relative;
 }
 
 .sidebar {
   padding-top: 1rem;
+  position: sticky;
+  top: 0;
 }
 .sidebar > div {
   font-size: 2rem;
@@ -56,19 +60,26 @@ a {
   color: var(--card-color);
 }
 
+a:hover {
+  filter: brightness(80%);
+}
+
 .sidebar li {
   margin-top: 1em;
   font-size: 25px;
-  display: flex;
-  align-items: center;
 }
 
 .sidebar .dashboard-bottom-list {
   margin-top: 6rem;
 }
 
+.sidebar li a {
+  display: flex;
+  align-items: center;
+}
+
 /* SVGs */
-ul.dashboard-top-list li:nth-child(1)::before {
+ul.dashboard-top-list li:nth-child(1) a::before {
   font-family: "Material Icons";
   content: "\e88a";
   padding-right: 20px;
@@ -76,7 +87,7 @@ ul.dashboard-top-list li:nth-child(1)::before {
   font-size: var(--icon-size);
 }
 
-ul.dashboard-top-list li:nth-child(2)::before {
+ul.dashboard-top-list li:nth-child(2) a::before {
   font-family: "Material Icons";
   content: "\e7fd";
   padding-right: 20px;
@@ -84,28 +95,28 @@ ul.dashboard-top-list li:nth-child(2)::before {
   font-size: var(--icon-size);
 }
 
-ul.dashboard-top-list li:nth-child(3)::before {
+ul.dashboard-top-list li:nth-child(3) a::before {
   font-family: "Material Icons";
   content: "\e253";
   padding-right: 20px;
   color: var(--card-color);
   font-size: var(--icon-size);
 }
-ul.dashboard-top-list li:nth-child(4)::before {
+ul.dashboard-top-list li:nth-child(4) a::before {
   font-family: "Material Icons";
   content: "\e889";
   padding-right: 20px;
   color: var(--card-color);
   font-size: var(--icon-size);
 }
-ul.dashboard-top-list li:nth-child(5)::before {
+ul.dashboard-top-list li:nth-child(5) a::before {
   font-family: "Material Icons";
   content: "\f075";
   padding-right: 20px;
   color: var(--card-color);
   font-size: var(--icon-size);
 }
-ul.dashboard-top-list li:nth-child(6)::before {
+ul.dashboard-top-list li:nth-child(6) a::before {
   font-family: "Material Icons";
   content: "\f233";
   padding-right: 20px;
@@ -113,7 +124,7 @@ ul.dashboard-top-list li:nth-child(6)::before {
   font-size: var(--icon-size);
 }
 
-ul.dashboard-bottom-list li:nth-child(1)::before {
+ul.dashboard-bottom-list li:nth-child(1) a::before {
   font-family: "Material Icons";
   content: "\e8b8";
   padding-right: 20px;
@@ -121,7 +132,7 @@ ul.dashboard-bottom-list li:nth-child(1)::before {
   font-size: var(--icon-size);
 }
 
-ul.dashboard-bottom-list li:nth-child(2)::before {
+ul.dashboard-bottom-list li:nth-child(2) a::before {
   font-family: "Material Icons";
   content: "\e94c";
   padding-right: 20px;
@@ -129,7 +140,7 @@ ul.dashboard-bottom-list li:nth-child(2)::before {
   font-size: var(--icon-size);
 }
 
-ul.dashboard-bottom-list li:nth-child(3)::before {
+ul.dashboard-bottom-list li:nth-child(3) a::before {
   font-family: "Material Icons";
   content: "\e8e8";
   padding-right: 20px;
@@ -142,7 +153,8 @@ ul.dashboard-bottom-list li:nth-child(3)::before {
 .grid-right {
   grid-column: 2 / span 1;
   display: grid;
-  grid-template-rows: 1fr 9fr;
+  grid-auto-rows: min-content;
+  background-color: var(--main-bgc-color);
 }
 
 .header {
@@ -174,6 +186,10 @@ ul.dashboard-bottom-list li:nth-child(3)::before {
 
 .header-bottom .greeting {
   margin-right: auto;
+}
+
+.greeting span {
+  font-weight: bold;
 }
 
 .header-bottom::before {
@@ -225,6 +241,7 @@ input[type="search"] {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-weight: bold;
 }
 
 #inside-logo::before {
@@ -250,10 +267,13 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  filter: brightness(85%);
+}
+
 .main {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  background-color: var(--main-bgc-color);
   gap: 25px;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
@@ -278,6 +298,12 @@ button {
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
+}
+
+.cards:hover,
+.announcements-content:hover,
+.trending-all:hover {
+  border: 3px solid var(--sidebar-color);
 }
 
 .trending-all {
